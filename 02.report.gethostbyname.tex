@@ -1,0 +1,77 @@
+\documentclass{report}
+\title{Report1 for Network}
+\author{Nguyen Duc Vu}
+
+\begin{document}
+
+\maketitle
+
+\begin{section}{Part1}
+
+
+\begin{verbatim}
+
+vu@vp4:~$ ./readHostname usth.edu.vn
+Official name is: usth.edu.vn
+    IP addresses: 42.112.27.174 
+vu@vp4:~$ ./readHostname
+Please enter a hostname: usth.edu.vn
+Official name is: usth.edu.vn
+    IP addresses: 42.112.27.174 
+vu@vp4:~$ ./readHostname usth.edu.vn
+Official name is: usth.edu.vn
+    IP addresses: 42.112.27.174 
+vu@vp4:~$ ./readHostname
+Please enter a hostname: usth.edu.vn
+Official name is: usth.edu.vn
+    IP addresses: 42.112.27.174 
+vu@vp4:~$ ./readHostname
+Please enter a hostname: usth.edu.vn
+Official name is: usth.edu.vn
+    IP addresses: 42.112.27.174 
+vu@vp4:~$ 
+
+
+\end{verbatim}
+
+\end{section}
+
+
+\begin{section}{Part2}
+
+
+\begin{verbatim}
+vu@vu-virtual-machine:~/Desktop$ ./readHostname usth.edu.vn
+Official name is: usth.edu.vn
+    IP addresses: 42.112.27.174 
+vu@vu-virtual-machine:~/Desktop$ ./readHostname usth.edu.vn
+Official name is: usth.edu.vn
+    IP addresses: 42.112.27.174 
+vu@vu-virtual-machine:~/Desktop$ ./readHostname
+Please enter a hostname: usth.edu.vn
+Official name is: usth.edu.vn
+    IP addresses: 42.112.27.174 
+vu@vu-virtual-machine:~/Desktop$ ./readHostname
+Please enter a hostname: usth.edu.vn
+Official name is: usth.edu.vn
+    IP addresses: 42.112.27.174 
+vu@vu-virtual-machine:~/Desktop$ 
+
+
+\end{verbatim}
+
+\end{section}
+
+
+\begin{section}{Part3}
+\begin{verbatim}
+
+Explain the result:
+
+The outputs received from both my laptop and the VPS are the same as there's 1 IP Address entry for "usth.edu.vn" when the program looked in the DNS 
+
+\end{verbatim}
+\end{section}
+
+
+\end{document}

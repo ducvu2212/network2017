@@ -9,12 +9,11 @@
 
 int main(int argc, char *argv[])
 {
-
-int sockfd, clen, clientfd;
-struct sockaddr_in saddr, caddr;
-unsigned short port = 8785;
-if ((sockfd=socket(AF_INET, SOCK_STREAM, 0)) < 0) {
-printf("Error creating socket\n");
+	int sockfd, clen, clientfd;
+	struct sockaddr_in saddr, caddr;
+	unsigned short port = 8785;
+	if ((sockfd=socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+	printf("Error creating socket\n");
 }
 //create the socket
 sockfd = socket(AF_INET, SOCK_STREAM, 0);
@@ -33,20 +32,19 @@ socklen_t addrlen);
 
 if (bind(sockfd, (struct sockaddr *) &saddr, sizeof(saddr)) < 0) {
 printf("Error binding\n");
-
 }
 
 //listen for connection requests
 if (listen(sockfd, 5) < 0) {
-printf("Error listening\n");
+	printf("Error listening\n");
 }
+
 listen(sockfd, 10);
 clen=sizeof(caddr);
 
 //accept a new socket
 if ((clientfd=accept(sockfd, (struct sockaddr *) &caddr, &clen)) < 0) {
-printf("Error accepting connection\n");
-
+	printf("Error accepting connection\n");
 }
 
 int client = accept(sockfd, (struct sockaddr_in *) &caddr, &clen);

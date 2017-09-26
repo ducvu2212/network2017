@@ -142,42 +142,6 @@ int main(int argc, char *argv[])
 			}
 		
 
-	// listen(sockfd, 10);
-	// clen=sizeof(caddr);
-
-	// //accept a new socket
-	// if ((clientfd=accept(sockfd, (struct sockaddr *) &caddr, &clen)) < 0) {
-	// 	printf("Error accepting connection\n");
-	// }
-
-	// if ((clientfd=accept(sockfd, (struct sockaddr *) &caddr, &clen)) > 0) {
-	// 	int fl = fcntl(clientfd, F_GETFL, 0);
-	// 	fl |= O_NONBLOCK;
-	// 	fcntl(clientfd, F_SETFL, fl);
-	// }
-
-	//***********************Data Transfer************************
-	// while (1) {
-	// 	char buffer[100];
-	//     recv(clientfd, buffer, sizeof(buffer), 0);
-	//     // printf("\nReceive: %s", buffer);
-	//     // printf("\nSend: ");
-	//     scanf("%s", buffer);
-	    
-	    
-	// //*********************Data Delimiter******************
-	//     if (strcmp (buffer, "/quit") == 0)
-	//     {
-	//     	int count;
-	// 		char c;
-	// 		while ((count = read(sockfd, &c, sizeof(c))) > 0) {
-	// 				shutdown (sockfd, SHUT_RDWR);
-	// 				close (sockfd);
-	// 		}
-	//     }
-
-	//     send(clientfd, buffer, strlen(buffer), 0);
-	// }
 
 		/* Tokenize command */
 				bzero(temp_buf, sizeof(temp_buf));				
